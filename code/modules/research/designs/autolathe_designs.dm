@@ -215,13 +215,113 @@
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
-/datum/design/lightswitch_frame
-	name = "Lightswitch Frame"
-	id = "lightswitch_frame"
+/datum/design/rtg
+	name = "Basic RTG"
+	id = "rtg_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/rtg
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/rtg/advanced
+	name = "Advanced RTG"
+	id = "advrtg_design"
 	build_type = AUTOLATHE
-	materials = list(/datum/material/iron = 50, /datum/material/glass = 50)
-	build_path = /obj/item/wallframe/light_switch
-	category = list("initial", "Misc")
+	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1000, /datum/material/gold = 250)
+	build_path = /obj/machinery/power/rtg/advanced
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/smesboard
+	name = "SMES board"
+	id = "smes_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/rtg
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/protolathe
+	name = "Science Protolathe"
+	id = "scifab_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/protolathe/department/science
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/protolathe
+	name = "Research Console"
+	id = "rdconsole_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/computer/rdconsole
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/sciserver
+	name = "Science Server"
+	id = "sciserver_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/rdserver
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/medifab
+	name = "Medical fabricator"
+	id = "medifab_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/techfab/department/medical
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/secfab
+	name = "Security fabricator"
+	id = "secfab_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/techfab/department/security
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/servfab
+	name = "Service fabricator"
+	id = "servfab_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/techfab/department/service
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/orerefinery
+	name = "Ore Redemption Machine"
+	id = "orerefinery_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 3000, /datum/material/glass = 3000)
+	build_path = /obj/item/circuitboard/machine/ore_redemption
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/cargofab
+	name = "Cargo Fabricator"
+	id = "cargofab_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/techfab/department/cargo
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/engiefab
+	name = "Engineering Fabricator"
+	id = "engiefab_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/techfab/department/engineering
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
 /datum/design/paper_roll
 	name = "Hand Labeler Paper Roll"

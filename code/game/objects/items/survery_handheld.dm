@@ -6,21 +6,28 @@
 	var/static/list/z_active = list()
 	var/static/list/z_history = list()
 	var/active = FALSE
-	var/survey_value = 300
+	var/survey_value = 650
 	var/survey_delay = 4 SECONDS
 
 /obj/item/survey_handheld/advanced
 	name = "Advanced Survey Handheld"
 	desc = "An improved version of its predecessor this tool collects large amounts of data."
 	icon_state = "survey-adv"
-	survey_value = 450
+	survey_value = 1300
 	survey_delay = 3 SECONDS
 
 /obj/item/survey_handheld/elite
 	name = "Experimental Survey Handheld"
 	desc = "An improvement on even the Advanced version; this handheld was designed to be extremely fast in collecting data."
 	icon_state = "survey-elite"
-	survey_value = 650
+	survey_value = 2400
+	survey_delay = 2 SECONDS
+
+/obj/item/survey_handheld/exp
+	name = "Bluespace Survey Handheld"
+	desc = "An improvement on even the Experimental version version; this handheld was designed to be extremely fast and accurate in collecting data, with compressed internal parts."
+	icon_state = "survey-elite"
+	survey_value = 5000
 	survey_delay = 2 SECONDS
 
 /obj/item/survey_handheld/attack_self(mob/user)
@@ -118,7 +125,7 @@
 	name = "Experimental Survey Handheld"
 	id = "survey-handheld-exp"
 	build_type = PROTOLATHE
-	build_path = /obj/item/survey_handheld/elite
+	build_path = /obj/item/survey_handheld/exp
 	materials = list(
 		/datum/material/iron = 5000,
 		/datum/material/silver = 5000,

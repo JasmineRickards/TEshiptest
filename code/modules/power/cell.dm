@@ -16,7 +16,7 @@
 	throw_range = 5
 	w_class = WEIGHT_CLASS_SMALL
 	var/charge = 0	// note %age conveted to actual charge in New
-	var/maxcharge = 1000
+	var/maxcharge = 2000
 	custom_materials = list(/datum/material/iron=700, /datum/material/glass=50)
 	grind_results = list(/datum/reagent/lithium = 15, /datum/reagent/iron = 5, /datum/reagent/silicon = 5)
 	var/rigged = FALSE	// true if rigged to
@@ -195,7 +195,7 @@
 /obj/item/stock_parts/cell/crap
 	name = "\improper Nanotrasen brand rechargeable AA battery"
 	desc = "You can't top the plasma top." //TOTALLY TRADEMARK INFRINGEMENT
-	maxcharge = 500
+	maxcharge = 1000
 	custom_materials = list(/datum/material/glass=40)
 
 /obj/item/stock_parts/cell/crap/empty/Initialize()
@@ -206,18 +206,18 @@
 /obj/item/stock_parts/cell/upgraded
 	name = "upgraded power cell"
 	desc = "A power cell with a slightly higher capacity than normal!"
-	maxcharge = 2500
+	maxcharge = 5000
 	custom_materials = list(/datum/material/glass=50)
 	chargerate = 1000
 
 /obj/item/stock_parts/cell/upgraded/plus
 	name = "upgraded power cell+"
 	desc = "A power cell with an even higher capacity than the base model!"
-	maxcharge = 5000
+	maxcharge = 10000
 
 /obj/item/stock_parts/cell/secborg
 	name = "security borg rechargeable D battery"
-	maxcharge = 6000	//6000 max charge / 1000 charge per shot = six shots
+	maxcharge = 12000	//6000 max charge / 1000 charge per shot = six shots
 	custom_materials = list(/datum/material/glass=40)
 
 /obj/item/stock_parts/cell/secborg/empty/Initialize()
@@ -227,34 +227,34 @@
 
 /obj/item/stock_parts/cell/mini_egun
 	name = "miniature energy gun power cell"
-	maxcharge = 600
+	maxcharge = 800
 	rating = 0 //gun batteries now incompatible with RPED WS edit
 
 /obj/item/stock_parts/cell/hos_gun
 	name = "X-01 multiphase energy gun power cell"
-	maxcharge = 1200
+	maxcharge = 1600
 	rating = 0 //gun batteries now incompatible with RPED WS edit
 
 /obj/item/stock_parts/cell/pulse //200 pulse shots
 	name = "pulse rifle power cell"
-	maxcharge = 400000
+	maxcharge = 800000
 	chargerate = 1500
 	rating = 0 //gun batteries now incompatible with RPED WS edit
 
 /obj/item/stock_parts/cell/pulse/carbine //25 pulse shots
 	name = "pulse carbine power cell"
-	maxcharge = 50000
+	maxcharge = 100000
 	rating = 0 //gun batteries now incompatible with RPED WS edit
 
 /obj/item/stock_parts/cell/pulse/pistol //10 pulse shots
 	name = "pulse pistol power cell"
-	maxcharge = 20000
+	maxcharge = 40000
 	rating = 0 //gun batteries now incompatible with RPED WS edit
 
 /obj/item/stock_parts/cell/high
 	name = "high-capacity power cell"
 	icon_state = "hcell"
-	maxcharge = 10000
+	maxcharge = 20000
 	custom_materials = list(/datum/material/glass=60)
 	chargerate = 1500
 
@@ -262,7 +262,7 @@
 	name = "high-capacity power cell+"
 	desc = "Where did these come from?"
 	icon_state = "h+cell"
-	maxcharge = 15000
+	maxcharge = 30000
 	chargerate = 2250
 	rating = 2
 
@@ -274,7 +274,7 @@
 /obj/item/stock_parts/cell/super
 	name = "super-capacity power cell"
 	icon_state = "scell"
-	maxcharge = 20000
+	maxcharge = 40000
 	custom_materials = list(/datum/material/glass=300)
 	chargerate = 2000
 	rating = 3
@@ -287,7 +287,7 @@
 /obj/item/stock_parts/cell/hyper
 	name = "hyper-capacity power cell"
 	icon_state = "hpcell"
-	maxcharge = 30000
+	maxcharge = 60000
 	custom_materials = list(/datum/material/glass=400)
 	chargerate = 3000
 	rating = 4
@@ -301,7 +301,7 @@
 	name = "bluespace power cell"
 	desc = "A rechargeable transdimensional power cell."
 	icon_state = "bscell"
-	maxcharge = 40000
+	maxcharge = 80000
 	custom_materials = list(/datum/material/glass=600)
 	chargerate = 4000
 	rating = 5
@@ -347,7 +347,7 @@
 /obj/item/stock_parts/cell/emproof
 	name = "\improper EMP-proof cell"
 	desc = "An EMP-proof cell."
-	maxcharge = 500
+	maxcharge = 1000
 	rating = 3
 
 /obj/item/stock_parts/cell/emproof/empty/Initialize()
@@ -430,7 +430,37 @@
 	custom_materials = list(/datum/material/glass=300)
 	chargerate = 2000
 
+/obj/item/stock_parts/cell/gun/upgraded
+	name = "upgraded weapon power cell"
+	icon_state = "ug-cell"
+	maxcharge = 20000
+	custom_materials = list(/datum/material/glass=300)
+	chargerate = 2000
+
+/obj/item/stock_parts/cell/gun/upgradedreactor
+	name = "upgraded weapon power cell"
+	icon_state = "ug-cell"
+	maxcharge = 20000
+	custom_materials = list(/datum/material/glass=300)
+	chargerate = 400
+	self_recharge = 1
+
 /obj/item/stock_parts/cell/gun/upgraded/empty/Initialize()
+	. = ..()
+	charge = 0
+	update_appearance()
+
+/obj/item/stock_parts/cell/bluespacereactor
+//	empty = TRUE
+	name = "bluespace reactor power cell"
+	desc = "A self charging transdimensional power cell."
+	icon_state = "bscell"
+	maxcharge = 10000
+	custom_materials = list(/datum/material/glass=600)
+	chargerate = 400
+	self_recharge = 1
+
+/obj/item/stock_parts/cell/bluespacereactor/empty/Initialize()
 	. = ..()
 	charge = 0
 	update_appearance()

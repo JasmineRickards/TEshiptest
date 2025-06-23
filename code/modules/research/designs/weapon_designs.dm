@@ -87,6 +87,16 @@
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
+/datum/design/nuclear_guncell
+	name = "Weapon reactor cell"
+	desc = "An energy weapon power cell, that charges itself!"
+	id = "nuclear_gunreactor"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 1200, /datum/material/gold = 820, /datum/material/glass = 660, /datum/material/diamond = 460, /datum/material/titanium = 600, /datum/material/bluespace = 600)
+	build_path = /obj/item/gun/energy/e_gun/nuclear
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
 /datum/design/tele_shield
 	name = "Telescopic Riot Shield"
 	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage."

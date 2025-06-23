@@ -42,6 +42,46 @@
 	make_reagents = list(/datum/reagent/consumable/blackpepper = 10)
 	category = list("initial","Food")
 
+/datum/design/salt
+	name = "Salt"
+	id = "salt_biogen"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 1)
+	make_reagents = list(/datum/reagent/consumable/sodiumchloride = 1)
+	category = list("initial","Food")
+
+/datum/design/bbq_sauce
+	name = "Barbecue sauce"
+	id = "bbq_sauce"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 5)
+	make_reagents = list(/datum/reagent/consumable/bbqsauce = 1)
+	category = list("initial","Food")
+
+/datum/design/ketchup
+	name = "Ketchup"
+	id = "ketchup"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 5)
+	make_reagents = list(/datum/reagent/consumable/ketchup = 1)
+	category = list("initial","Food")
+
+/datum/design/flour
+	name = "Flour"
+	id = "flour_sack"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 0.6)
+	make_reagents = list(/datum/reagent/consumable/flour = 1)
+	category = list("initial","Food")
+
+/datum/design/sugar
+	name = "Sugar"
+	id = "sugar"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 0.6)
+	make_reagents = list(/datum/reagent/consumable/sugar = 1)
+	category = list("initial","Food")
+
 /datum/design/enzyme
 	name = "10u Universal Enzyme"
 	id = "enzyme"

@@ -266,7 +266,7 @@
 	display_name = "Bluespace Power Technology"
 	description = "Even more powerful.. power!"
 	prereq_ids = list("adv_power", "practical_bluespace")
-	design_ids = list("bluespace_cell", "quadratic_capacitor")
+	design_ids = list("bluespace_cell", "quadratic_capacitor", "bluespace_cellreactor")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 
@@ -657,8 +657,8 @@
 	display_name = "Radioactive Weaponry"
 	description = "Weapons using radioactive technology."
 	prereq_ids = list("adv_engi", "adv_weaponry")
-	design_ids = list("nuclear_gun")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	design_ids = list("nuclear_gun" ,"nuclear_gunreactor")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3500)
 	export_price = 5000
 
 /datum/techweb_node/medical_weapons

@@ -55,6 +55,17 @@
 	category = list("Misc","Power Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 
+/datum/design/bluespace_cellreactor
+	name = "Bluespace reactor Power Cell"
+	desc = "A power cell that holds 40 MJ of energy."
+	id = "bluespace_cellreactor"
+	build_type = PROTOLATHE | MECHFAB
+	materials = list(/datum/material/iron = 1200, /datum/material/gold = 820, /datum/material/glass = 660, /datum/material/diamond = 460, /datum/material/titanium = 600, /datum/material/bluespace = 600)
+	construction_time=200
+	build_path = /obj/item/stock_parts/cell/bluespace/empty
+	category = list("Misc","Power Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
+
 /datum/design/light_replacer
 	name = "Light Replacer"
 	desc = "A device to automatically replace lights. Refill with working light bulbs."
