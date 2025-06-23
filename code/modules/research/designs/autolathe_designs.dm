@@ -229,7 +229,7 @@
 	id = "advrtg_design"
 	build_type = AUTOLATHE
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1000, /datum/material/gold = 250)
-	build_path = /obj/machinery/power/rtg/advanced
+	build_path = /obj/item/circuitboard/machine/rtg/advanced
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
