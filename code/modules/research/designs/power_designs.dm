@@ -62,7 +62,7 @@
 	build_type = PROTOLATHE | MECHFAB
 	materials = list(/datum/material/iron = 1200, /datum/material/gold = 820, /datum/material/glass = 660, /datum/material/diamond = 460, /datum/material/titanium = 600, /datum/material/bluespace = 600)
 	construction_time=200
-	build_path = /obj/item/stock_parts/cell/bluespace/empty
+	build_path = /obj/item/stock_parts/cell/bluespacereactor
 	category = list("Misc","Power Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 

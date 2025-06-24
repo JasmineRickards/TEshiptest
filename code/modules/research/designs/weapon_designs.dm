@@ -93,7 +93,7 @@
 	id = "nuclear_gunreactor"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 1200, /datum/material/gold = 820, /datum/material/glass = 660, /datum/material/diamond = 460, /datum/material/titanium = 600, /datum/material/bluespace = 600)
-	build_path = /obj/item/gun/energy/e_gun/nuclear
+	build_path = /obj/item/stock_parts/cell/bluespacereactor
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
