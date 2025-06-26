@@ -275,6 +275,15 @@
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/kelotane(src)
 	new /obj/item/reagent_containers/glass/bottle/vial/large/preloaded/dexalin(src)
 
+/obj/item/storage/box/hypospray/diremedipen
+	name = "Dire medical pen kit"
+
+/obj/item/storage/box/hypospray/diremedipen/PopulateContents()
+	new /obj/item/reagent_containers/hypospray/medipen/diremedipen(src)
+	new /obj/item/reagent_containers/hypospray/medipen/diremedipen(src)
+	new /obj/item/reagent_containers/hypospray/medipen/diremedipen(src)
+	new /obj/item/reagent_containers/hypospray/medipen/diremedipen(src)
+
 /obj/item/storage/box/medigels
 	name = "box of medical gels"
 	desc = "A box full of medical gel applicators, with unscrewable caps and precision spray heads."

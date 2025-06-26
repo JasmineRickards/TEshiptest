@@ -260,21 +260,30 @@
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
-/datum/design/rdfab
-	name = "Science fabricator"
-	id = "rdfab_design"
-	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
-	build_path = /obj/item/circuitboard/machine/circuit_imprinter/department/science
-	category = list("initial", "Electronics")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
-
 /datum/design/sciserver
 	name = "Science Server"
 	id = "sciserver_design"
 	build_type = AUTOLATHE | PROTOLATHE
 	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
 	build_path = /obj/item/circuitboard/machine/rdserver
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/rdfab
+	name = "Science fabricator"
+	id = "rdfab_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/techfab/department/science
+	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/rdimprinter
+	name = "Science Circuit Imprinter"
+	id = "rdcirc_design"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
+	build_path = /obj/item/circuitboard/machine/circuit_imprinter
 	category = list("initial", "Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
