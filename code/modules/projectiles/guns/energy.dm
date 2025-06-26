@@ -27,6 +27,7 @@
 		/obj/item/stock_parts/cell/gun/upgraded,
 		/obj/item/stock_parts/cell/gun/empty,
 		/obj/item/stock_parts/cell/gun/upgraded/empty,
+		/obj/item/stock_parts/cell/gun/upgradedreactor,
 	)
 
 	tac_reloads = FALSE

@@ -440,7 +440,7 @@
 /obj/item/stock_parts/cell/gun/upgradedreactor
 	name = "upgraded nuclear weapon power cell"
 	icon_state = "ug-cell"
-	maxcharge = 20000
+	maxcharge = 13000
 	custom_materials = list(/datum/material/glass=300)
 	chargerate = 400
 	self_recharge = 1
