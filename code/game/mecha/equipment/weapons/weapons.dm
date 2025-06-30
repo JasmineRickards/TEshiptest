@@ -92,7 +92,7 @@
 	addtimer(CALLBACK(src, PROC_REF(set_ready_state), 1), equip_cooldown)
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/carbine
-	equip_cooldown = 2
+	equip_cooldown = 4.5
 	name = "\improper CH-PS \"Downpour\" energy carbine"
 	desc = "A weapon for combat exosuits. A rapid fire energy carbine with both lethal and disabler modes."
 	icon_state = "mecha_laser"

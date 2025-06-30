@@ -187,14 +187,14 @@
 	cost = 600
 	contains = list(/obj/item/storage/box/medipens)
 	crate_name = "epinephrine medipen crate"
-
+/* Bit too strong for what it can do... Oops.
 /datum/supply_pack/medical/epipen_crate
 	name = "Dire Medipen Crate"
 	desc = "Contains a spare box of dire medipens, for when the going gets the toughest."
 	cost = 4000
 	contains = list(/obj/item/storage/box/hypospray/diremedipen)
 	crate_name = "epinephrine medipen crate"
-
+*/
 /* Hypospray supplies */
 
 /datum/supply_pack/medical/mkii_hypo
