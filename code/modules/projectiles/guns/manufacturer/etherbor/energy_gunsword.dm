@@ -11,7 +11,7 @@
 
 	modifystate = TRUE
 
-	fire_delay = 0.16 SECONDS
+	fire_delay = 1.5
 
 	wield_delay = 0.7 SECONDS
 	wield_slowdown = LASER_SMG_SLOWDOWN
@@ -60,6 +60,7 @@
 
 	wield_delay = 0.7 SECONDS
 	wield_slowdown = LASER_SMG_SLOWDOWN
+	fire_delay = 0.2 SECONDS
 
 	default_ammo_type = /obj/item/stock_parts/cell/gun/pgf
 	allowed_ammo_types = list(
@@ -90,7 +91,7 @@
 	item_state = "kalixpistol"
 	w_class = WEIGHT_CLASS_NORMAL
 	modifystate = FALSE
-
+	fire_delay = 0.3 SECONDS
 	wield_delay = 0.2 SECONDS
 	wield_slowdown = LASER_PISTOL_SLOWDOWN
 
@@ -126,6 +127,7 @@
 	icon_state = "pgfmedium"
 	item_state = "pgfmedium"
 	slot_flags = ITEM_SLOT_BACK
+	fire_delay = 0.2 SECONDS
 
 	modifystate = TRUE
 
@@ -202,6 +204,7 @@
 	desc = "HBG-7 with a longer barrel and scope. Intended to get the best use out of the DMR mode, it suffers from longer wield times and slowdown, but it's longer barrel makes it ideal for accuracy."
 	icon_state = "pgfheavy_sniper"
 	item_state = "pgfheavy_sniper"
+	fire_delay = 0.25 SECONDS
 
 	zoomable = TRUE
 	zoom_amt = 10 //Long range, enough to see in front of you, but no tiles behind you.
@@ -212,3 +215,4 @@
 
 	wield_slowdown = LASER_SNIPER_SLOWDOWN
 	wield_delay = 1.3 SECONDS
+	fire_delay = 0.25 SECONDS

@@ -371,6 +371,15 @@
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 
+/datum/techweb_node/cyborg_upg_sec
+	id = "cyborg_upg_sec"
+	display_name = "Security Cyborg Lethals"
+	description = "Cyborg upgrades: Security."
+	prereq_ids = list("adv_weaponry")
+	design_ids = list("borg_syndicate_module")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
+	export_price = 5000
+
 /////////////////////////EMP tech/////////////////////////
 /datum/techweb_node/emp_basic //EMP tech for some reason
 	id = "emp_basic"
@@ -1097,7 +1106,7 @@
 	display_name = "Illegal Technology"
 	description = "Dangerous research used to create dangerous objects."
 	prereq_ids = list("adv_engi", "adv_weaponry", "explosive_weapons")
-	design_ids = list("decloner", "borg_syndicate_module", "ai_cam_upgrade", "suppressor", "largecrossbow", "donksofttoyvendor", "donksoft_refill", "advanced_camera")
+	design_ids = list("decloner", "ai_cam_upgrade", "suppressor", "largecrossbow", "donksofttoyvendor", "donksoft_refill", "advanced_camera")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 	export_price = 5000
 	hidden = TRUE
