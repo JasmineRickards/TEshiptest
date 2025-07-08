@@ -12,6 +12,15 @@
 	category = list("initial", "Tool Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_ENGINEERING
 
+/datum/design/electric_welding_tool
+	name = "Electric Welding Tool"
+	id = "electric_welding_tool"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 700, /datum/material/glass = 600, /datum/material/silver = 400)
+	build_path = /obj/item/weldingtool/electric
+	category = list("initial", "Tool Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_ENGINEERING
+
 /datum/design/handdrill
 	name = "Hand Drill"
 	desc = "A small electric hand drill with an interchangeable screwdriver and bolt bit"
