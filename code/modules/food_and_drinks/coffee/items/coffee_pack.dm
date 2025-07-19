@@ -10,6 +10,9 @@
 	STR.max_items = 5
 	var/static/list/can_hold = typecacheof(list(/obj/item/food/grown/coffee))
 	STR.can_hold = can_hold
+	for(var/i in 1 to 7)
+		new /obj/item/food/grown/coffee(src)
+
 
 /obj/item/storage/box/coffeepack/arabica
 	name = "arabica beans"
@@ -23,3 +26,5 @@
 	STR.max_items = 5
 	var/static/list/can_hold = typecacheof(list(/obj/item/food/grown/coffee))
 	STR.can_hold = can_hold
+	for(var/i in 1 to 7)
+		new /obj/item/food/grown/coffee(src)

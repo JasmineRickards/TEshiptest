@@ -42,6 +42,46 @@
 	make_reagents = list(/datum/reagent/consumable/blackpepper = 10)
 	category = list("initial","Food")
 
+/datum/design/salt
+	name = "Salt"
+	id = "salt_biogen"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 25)
+	make_reagents = list(/datum/reagent/consumable/sodiumchloride = 10)
+	category = list("initial","Food")
+
+/datum/design/bbq_sauce
+	name = "Barbecue sauce"
+	id = "bbq_sauce"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 50)
+	make_reagents = list(/datum/reagent/consumable/bbqsauce = 10)
+	category = list("initial","Food")
+
+/datum/design/ketchup
+	name = "Ketchup"
+	id = "ketchup"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 35)
+	make_reagents = list(/datum/reagent/consumable/ketchup = 10)
+	category = list("initial","Food")
+
+/datum/design/flour
+	name = "Flour"
+	id = "flour_sack"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 50)
+	make_reagents = list(/datum/reagent/consumable/flour = 10)
+	category = list("initial","Food")
+
+/datum/design/sugar
+	name = "Sugar"
+	id = "sugar"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 50)
+	make_reagents = list(/datum/reagent/consumable/sugar = 10)
+	category = list("initial","Food")
+
 /datum/design/enzyme
 	name = "10u Universal Enzyme"
 	id = "enzyme"
@@ -56,6 +96,22 @@
 	build_type = BIOGENERATOR
 	materials = list(/datum/material/biomass= 30)
 	make_reagents = list(/datum/reagent/consumable/flour = 10)
+	category = list("initial","Food")
+
+/datum/design/synthmeatslab
+	name = "Synthetic meat slab"
+	id = "synmeatslab"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass= 150)
+	build_path = /obj/item/food/meat/slab
+	category = list("initial","Food")
+
+/datum/design/synthrotrilla
+	name = "Synthetic tortilla"
+	id = "syntortill"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass= 125)
+	build_path = /obj/item/food/tortilla
 	category = list("initial","Food")
 
 /datum/design/monkey_cube

@@ -37,8 +37,8 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	var/spawner_attached = FALSE //Probably a drastically less sloppy way of doing this, but it technically works
 	///is the spawner currently spawning mobs?
 	var/currently_spawning = FALSE
-	var/max_mobs = 6
-	var/spawn_time = 15 SECONDS
+	var/max_mobs = 2
+	var/spawn_time = 30 SECONDS
 	var/mob_types = list(
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/nest = 60,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest = 20,

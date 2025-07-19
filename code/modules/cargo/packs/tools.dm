@@ -168,6 +168,12 @@
 	faction_locked = TRUE
 	faction_discount = 0
 
+/datum/supply_pack/tools/t2survey
+	name = "Advanced Survey Tool"
+	desc = "Contains a single advanced survey tool, for all your surveying needs!."
+	cost = 1000
+	contains = list(/obj/item/survey_handheld/advanced)
+	crate_name = "Surveyor's crate"
 /*
 		Liquid tanks
 */
