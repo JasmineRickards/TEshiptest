@@ -25,7 +25,7 @@
 	wine_power = 30
 
 /obj/item/food/grown/onion/make_processable()
-	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/onion_slice, 2, 15, screentip_verb = "Cut")
+	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/onion_slice, 4, 1.5 SECONDS, table_required = TRUE)
 
 /obj/item/seeds/onion/red
 	name = "pack of red onion seeds"
@@ -45,8 +45,8 @@
 	wine_power = 60
 
 /obj/item/food/grown/onion/red/make_processable()
-	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/onion_slice/red, 2, 15, screentip_verb = "Cut")
 
+	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/onion_slice/red, 4, 1.5 SECONDS, table_required = TRUE)
 /obj/item/food/grown/onion/UsedforProcessing(mob/living/user, obj/item/I, list/chosen_option)
 	var/datum/effect_system/smoke_spread/chem/S = new	//Since the onion is destroyed when it's sliced,
 	var/splat_location = get_turf(src)	//we need to set up the smoke beforehand
