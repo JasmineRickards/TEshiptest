@@ -2,10 +2,10 @@
 	desc = "A light security exosuit manufactured by Cybersun Biodynamics. The basic version of the 500 Series combat exosuits, the 501p can overload its leg actuators to further enhance mobility."
 	name = "\improper 501p Security Exosuit"
 	icon_state = "gygax"
-	step_in = 3
+	step_in = 3.5
 	dir = NORTH
 	dir_in = NORTH
-	max_integrity = 300
+	max_integrity = 200
 	deflect_chance = 5
 	armor = list("melee" = 40, "bullet" = 60, "laser" = 40, "energy" = 15, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	max_temperature = 25000
@@ -14,7 +14,7 @@
 	force = 25
 	wreckage = /obj/structure/mecha_wreckage/gygax
 	internal_damage_threshold = 35
-	max_equip = 3
+	max_equip = 4
 	base_step_energy_drain = 8
 
 /obj/mecha/combat/gygax/mechturn(direction)
