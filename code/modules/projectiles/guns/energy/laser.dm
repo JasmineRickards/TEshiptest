@@ -100,6 +100,7 @@
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun/large,
 		/obj/item/stock_parts/cell/gun/large/empty,
+		/obj/item/stock_parts/cell/gun/large/charger,
 	)
 	force = 10
 	flags_1 =  CONDUCT_1

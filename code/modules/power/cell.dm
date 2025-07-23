@@ -489,6 +489,15 @@
 	chargerate = 5000
 	w_class = WEIGHT_CLASS_NORMAL
 
+/obj/item/stock_parts/cell/gun/large/charger
+	name = "extra-large recharging weapon power cell"
+	icon_state = "bg-cell"
+	maxcharge = 50000
+	custom_materials = list(/datum/material/glass=1000)
+	chargerate = 3000
+	self_recharge = 1
+	w_class = WEIGHT_CLASS_NORMAL
+
 /obj/item/stock_parts/cell/gun/large/empty/Initialize()
 	. = ..()
 	charge = 0

@@ -548,6 +548,16 @@
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
+/datum/design/laser/e50
+	name = "E-50 energy emitter"
+	desc = "A fabricated mobile emitter cannon."
+	id = "lasere50"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 35000, /datum/material/glass = 8000, /datum/material/uranium = 1500, /datum/material/silver = 1500)
+	build_path = /obj/item/gun/energy/laser/e50
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
 /datum/design/stun_boomerang
 	name = "OZtek Boomerang"
 	desc = "Uses reverse flow gravitodynamics to flip its personal gravity back to the thrower mid-flight. Also functions similar to a stun baton."
@@ -583,11 +593,22 @@
 /datum/design/gun_cell_large
 	name = "Large Weapon Power Cell"
 	desc = "A huge weapon power cell, holding 50 MJ of energy."
-	id = "gun_cell_large"
+	id = "gun_cell_largecharger"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 2000, /datum/material/gold = 200, /datum/material/glass = 400, /datum/material/diamond = 160, /datum/material/titanium = 300, /datum/material/bluespace = 100)
 	construction_time=100
 	build_path = /obj/item/stock_parts/cell/gun/large/empty
+	category = list("Misc","Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_SECURITY
+
+/datum/design/gun_cell_largecharger
+	name = "Large Recharging Weapon Power Cell"
+	desc = "A huge weapon power cell, holding 50 MJ of energy."
+	id = "gun_cell_largecharger"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 2000, /datum/material/gold = 600, /datum/material/glass = 400, /datum/material/diamond = 160, /datum/material/titanium = 300, /datum/material/bluespace = 100, /datum/material/uranium = 300)
+	construction_time=100
+	build_path = /obj/item/stock_parts/cell/gun/large/charger
 	category = list("Misc","Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_SECURITY
 
