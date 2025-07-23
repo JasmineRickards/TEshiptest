@@ -57,9 +57,8 @@
 	id = SPECIES_HUMANANTHRO
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,MUTCOLORS, LIPS, SCLERA, EMOTE_OVERLAY, MUTCOLORS_SECONDARY, HAS_FLESH, HAS_BONE)
-	default_features = list("mcolor" = "FFF", "tail_human" = "None", "ears" = "None", "wings" = "None", "body_size" = "Normal")
-	mutant_bodyparts = list("ears", "tail_human", "tail_lizard", "face_markings", "frills", "horns", "spines", "body_markings", "legs")
-	default_features = list("mcolor" = "0F0", "tail_lizard" = "Smooth", "face_markings" = "None", "horns" = "None", "frills" = "None", "spines" = "None", "body_markings" = "None", "legs" = "Normal Legs", "body_size" = "Normal")
+	mutant_bodyparts = list("ears", "tail_human", "face_markings", "frills", "horns", "spines", "body_markings", "legs")
+	default_features = list("mcolor" = "0F0", "face_markings" = "None", "horns" = "None", "frills" = "None", "body_markings" = "None", "legs" = "Normal Legs", "body_size" = "Normal", "tail_human" = "None", "ears" = "None", "wings" = "None")
 	use_skintones = FALSE
 	digitigrade_customization = DIGITIGRADE_OPTIONAL
 	skinned_type = /obj/item/stack/sheet/animalhide/human
