@@ -55,6 +55,7 @@
 	default_ammo_type = /obj/item/stock_parts/cell/gun/large
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun/large,
+		/obj/item/stock_parts/cell/gun/large/charger,
 	)
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/eoehoma/e50)
 	weapon_weight = WEAPON_HEAVY

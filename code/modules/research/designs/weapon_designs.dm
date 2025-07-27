@@ -593,7 +593,7 @@
 /datum/design/gun_cell_large
 	name = "Large Weapon Power Cell"
 	desc = "A huge weapon power cell, holding 50 MJ of energy."
-	id = "gun_cell_largecharger"
+	id = "gun_cell_large"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 2000, /datum/material/gold = 200, /datum/material/glass = 400, /datum/material/diamond = 160, /datum/material/titanium = 300, /datum/material/bluespace = 100)
 	construction_time=100
@@ -601,9 +601,9 @@
 	category = list("Misc","Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_SECURITY
 
-/datum/design/gun_cell_largecharger
+/datum/design/gun_cell_large/charger
 	name = "Large Recharging Weapon Power Cell"
-	desc = "A huge weapon power cell, holding 50 MJ of energy."
+	desc = "A huge weapon power cell, holding 50 MJ of energy and a small reactor."
 	id = "gun_cell_largecharger"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 2000, /datum/material/gold = 600, /datum/material/glass = 400, /datum/material/diamond = 160, /datum/material/titanium = 300, /datum/material/bluespace = 100, /datum/material/uranium = 300)
