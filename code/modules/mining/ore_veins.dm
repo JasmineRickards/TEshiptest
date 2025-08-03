@@ -33,9 +33,12 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	//Allows subtyped veins to determine how much loot is dropped per drop_ore call
 	var/drop_rate_amount_min = 15
 	var/drop_rate_amount_max = 20
-	///variables for the mob spawners we generate
-	var/max_mobs = 3
-	var/spawn_time = 10 SECONDS
+	//Mob spawning variables
+	var/spawner_attached = FALSE //Probably a drastically less sloppy way of doing this, but it technically works
+	///is the spawner currently spawning mobs?
+	var/currently_spawning = FALSE
+	var/max_mobs = 2
+	var/spawn_time = 30 SECONDS
 	var/mob_types = list(
 		/mob/living/simple_animal/hostile/asteroid/goliath/beast/nest = 60,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest = 20,

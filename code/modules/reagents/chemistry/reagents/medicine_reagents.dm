@@ -28,7 +28,7 @@
 	..()
 
 /datum/reagent/medicine/adminordrazine //An OP chemical for admins
-	name = "Adminordrazine"
+	name = "Restricted medicine#12"
 	description = "It's magic. We don't have to explain it."
 	color = "#E0BB00" //golden for the gods
 	can_synth = FALSE

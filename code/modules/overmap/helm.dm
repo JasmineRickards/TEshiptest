@@ -278,7 +278,7 @@
 		prefixed = current_ship.name,
 		class = current_ship.source_template.name,
 		mass = current_ship.shuttle_port.turf_count,
-		sensor_range = 4
+		sensor_range = 7
 	)
 	.["canFly"] = TRUE
 	.["aiUser"] = issilicon(user)

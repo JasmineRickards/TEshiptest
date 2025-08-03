@@ -1,7 +1,7 @@
 /datum/export/landmine
 	unit_name = "defused landmines"
 	desc = "The Confederated League maintains an active bounty program for the disposal of UXO. Make the frontier a safer place today!"
-	cost = 750
+	cost = 1500
 	elasticity_coeff = 0.1
 	export_types = list(/obj/item/mine/pressure/explosive)
 

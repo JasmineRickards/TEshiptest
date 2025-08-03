@@ -97,7 +97,7 @@
 	var/nutrition_threshold = NUTRITION_LEVEL_FED
 	if (H.nutrition >= nutrition_threshold)
 		to_chat(H, "<i>You begin spinning some web...</i>")
-		if(!do_after(H, 10 SECONDS, T, hidden = TRUE))
+		if(!do_after(H, 7 SECONDS, T, hidden = TRUE))
 			to_chat(H, span_warning("Your web spinning was interrupted!"))
 			return
 		if(prob(75))

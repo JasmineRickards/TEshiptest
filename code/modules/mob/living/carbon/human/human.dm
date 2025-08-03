@@ -1331,6 +1331,9 @@
 /mob/living/carbon/human/species/fly
 	race = /datum/species/fly
 
+/mob/living/carbon/human/species/human/anthro
+	race = /datum/species/human/anthro
+
 /mob/living/carbon/human/species/jelly
 	race = /datum/species/jelly
 
