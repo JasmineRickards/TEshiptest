@@ -11,7 +11,7 @@
 	///what the target of our scanning is.
 	var/atom/scan_target
 
-/obj/item/survey_handheld/examine(mob/user)
+/obj/item/survey_handheld/mission/examine(mob/user)
 	. = ..()
 	if(scans_required)
 		. += span_notice("The scanner reports [scan_tally] of [scans_required] scans have been completed.")
@@ -49,3 +49,42 @@
 	name = "Experimental Survey Handheld"
 	desc = "An experimental survey scanner utilizing deep radar techniques to quickly ascertain information on its locale."
 	icon_state = "survey-elite"
+
+/datum/design/survey_handheld
+	name = "Survey Handheld"
+	id = "survey-handheld"
+	build_type = AUTOLATHE
+	build_path = /obj/item/survey_handheld
+	materials = list(
+		/datum/material/iron = 2000,
+		/datum/material/glass = 1000,
+	)
+	category = list("initial", "Tools")
+
+/datum/design/survey_handheld_advanced
+	name = "Advanced Survey Handheld"
+	id = "survey-handheld-advanced"
+	build_type = PROTOLATHE
+	build_path = /obj/item/survey_handheld/advanced
+	materials = list(
+		/datum/material/iron = 3000,
+		/datum/material/glass = 2000,
+		/datum/material/gold = 2000,
+	)
+	category = list("Tool Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
+
+/datum/design/survey_handheld_elite
+	name = "Elite Survey Handheld"
+	id = "survey-handheld-elite"
+	build_type = PROTOLATHE
+	build_path = /obj/item/survey_handheld/elite
+	materials = list(
+		/datum/material/iron = 5000,
+		/datum/material/silver = 5000,
+		/datum/material/gold = 3000,
+		/datum/material/uranium = 3000,
+		/datum/material/diamond = 2000,
+	)
+	category = list("Tool Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE

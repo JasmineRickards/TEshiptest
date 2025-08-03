@@ -54,7 +54,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	var/spawner_distance_max = 1
 
 
-	var/currently_spawning = FALSE
+	currently_spawning = FALSE
 
 	///how far away can we create mob_spawners?
 	var/spawn_distance_min = 4
