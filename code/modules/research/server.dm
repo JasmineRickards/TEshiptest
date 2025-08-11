@@ -3,6 +3,11 @@
 	icon = 'icons/obj/machines/research.dmi'
 	icon_state = "RD-server-on"
 	var/datum/techweb/stored_research
+	/// if TRUE, we are currently operational and giving out research points.
+	var/working = TRUE
+	/// if TRUE, someone manually disabled us via console.
+	var/research_disabled = FALSE
+
 
 /obj/machinery/rnd/server/Initialize()
 	. = ..()

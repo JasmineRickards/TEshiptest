@@ -202,3 +202,9 @@ check_regex_output.txt
 
 # Autowiki
 /tools/autowiki/node_modules
+config/comms.txt
+config/config.txt
+config/dbconfig.txt
+config/donators/ianthewanderer.json
+config/game_options.txt
+config/motd.txt

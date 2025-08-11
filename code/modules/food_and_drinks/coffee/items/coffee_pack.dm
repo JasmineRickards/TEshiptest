@@ -15,6 +15,7 @@
 		ADD_TRAIT(bean, TRAIT_DRIED, type)
 		bean.add_atom_colour("#ad7257", FIXED_COLOUR_PRIORITY)
 
+
 /obj/item/storage/box/coffeepack/arabica
 	name = "arabica beans"
 	desc = "A bag containing fresh, dried coffee arabica beans."

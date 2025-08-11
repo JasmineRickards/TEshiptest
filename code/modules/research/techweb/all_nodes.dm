@@ -265,7 +265,7 @@
 	display_name = "Bluespace Power Technology"
 	description = "Even more powerful.. power!"
 	prereq_ids = list("adv_power", "practical_bluespace")
-	design_ids = list("bluespace_cell", "quadratic_capacitor")
+	design_ids = list("bluespace_cell", "quadratic_capacitor", "bluespace_cellreactor")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 
@@ -368,6 +368,15 @@
 	prereq_ids = list("adv_robotics")
 	design_ids = list("aifixer", "aicore", "reset_module", "purge_module", "remove_module", "borg_ai_control", "mecha_tracking_ai_control", "aiupload", "intellicard")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	export_price = 5000
+
+/datum/techweb_node/cyborg_upg_sec
+	id = "cyborg_upg_sec"
+	display_name = "Security Cyborg Lethals"
+	description = "Cyborg upgrades: Security."
+	prereq_ids = list("adv_weaponry")
+	design_ids = list("borg_syndicate_module")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
 	export_price = 5000
 
 /////////////////////////EMP tech/////////////////////////
@@ -558,16 +567,16 @@
 	design_ids = list("drill_diamond", "jackhammer", "hypermod")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
-// WS Edit Start - Yeet The BSM
-// /datum/techweb_node/bluespace_mining
-// 	id = "bluespace_mining"
-// 	display_name = "Bluespace Mining Technology"
-// 	description = "Harness the power of bluespace to make materials out of nothing. Slowly."
-// 	prereq_ids = list("practical_bluespace", "adv_mining")
-// 	design_ids = list("bluespace_miner")
-// 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-// 	export_price = 5000
-//  WS Edit End - Yeet The BSM
+// TE Edit Start - ADD The BSM
+/datum/techweb_node/bluespace_mining
+ 	id = "bluespace_mining"
+ 	display_name = "Bluespace Mining Technology"
+ 	description = "Harness the power of bluespace to make materials out of nothing. Slowly."
+ 	prereq_ids = list("practical_bluespace", "adv_mining")
+ 	design_ids = list("bluespace_miner")
+ 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+ 	export_price = 5000
+//  TS Edit End - ADD The BSM
 /datum/techweb_node/janitor
 	id = "janitor"
 	display_name = "Advanced Sanitation Technology"
@@ -590,7 +599,7 @@
 	id = "exp_tools"
 	display_name = "Experimental Tools"
 	description = "Highly advanced tools."
-	design_ids = list("jawsoflife", "handdrill", "laserscalpel", "mechanicalpinches", "searingtool")
+	design_ids = list("jawsoflife", "handdrill", "electric_welding_tool", "laserscalpel", "mechanicalpinches", "searingtool")
 	prereq_ids = list("adv_engi")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
@@ -655,8 +664,8 @@
 	display_name = "Radioactive Weaponry"
 	description = "Weapons using radioactive technology."
 	prereq_ids = list("adv_engi", "adv_weaponry")
-	design_ids = list("nuclear_gun")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	design_ids = list("nuclear_gun" ,"nuclear_gunreactor", "gun_cell_largecharger")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3500)
 	export_price = 5000
 
 /datum/techweb_node/medical_weapons
@@ -673,8 +682,8 @@
 	display_name = "Beam Weaponry"
 	description = "Various basic beam weapons"
 	prereq_ids = list("adv_weaponry")
-	design_ids = list("temp_gun", "xray_laser")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	design_ids = list("temp_gun", "xray_laser", "lasere50")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3500)
 	export_price = 5000
 
 /datum/techweb_node/adv_beam_weapons
@@ -1095,7 +1104,7 @@
 	display_name = "Illegal Technology"
 	description = "Dangerous research used to create dangerous objects."
 	prereq_ids = list("adv_engi", "adv_weaponry", "explosive_weapons")
-	design_ids = list("decloner", "borg_syndicate_module", "ai_cam_upgrade", "suppressor", "largecrossbow", "donksofttoyvendor", "donksoft_refill", "advanced_camera")
+	design_ids = list("decloner", "ai_cam_upgrade", "suppressor", "largecrossbow", "donksofttoyvendor", "donksoft_refill", "advanced_camera")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 	export_price = 5000
 	hidden = TRUE

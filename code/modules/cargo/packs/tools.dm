@@ -29,6 +29,15 @@
 	cost = 200
 	crate_name = "toolbox crate"
 
+/datum/supply_pack/tools/researchdata
+	name = "Research data"
+	desc = "Get some work done. Contains enough data to get things rolling!"
+	contains = list(/obj/item/research_notes/loot/genius,
+					/obj/item/research_notes/loot/genius,
+					/obj/item/research_notes/loot/genius)
+	cost = 2000
+	crate_name = "data crate"
+
 /datum/supply_pack/tools/engigear
 	name = "Engineering Gear Crate"
 	desc = "Contains one toolbelt and a set of meson goggles."
@@ -168,6 +177,12 @@
 	faction_locked = TRUE
 	faction_discount = 0
 
+/datum/supply_pack/tools/t2survey
+	name = "Advanced Survey Tool"
+	desc = "Contains a single advanced survey tool, for all your surveying needs!."
+	cost = 1000
+	contains = list(/obj/item/survey_handheld/advanced)
+	crate_name = "Surveyor's crate"
 /*
 		Liquid tanks
 */

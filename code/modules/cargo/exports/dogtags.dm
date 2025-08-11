@@ -1,6 +1,6 @@
 /datum/export/dogtag
 	desc = "CLIP has posted several bounties for wanted members of both the Frontiersman and the Clique. Bring back their tags, we'll reward you well."
-	cost = 200
+	cost = 600
 	elasticity_coeff = 0
 
 /datum/export/dogtag/frontiersmen
