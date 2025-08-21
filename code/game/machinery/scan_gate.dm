@@ -20,7 +20,7 @@
 #define SCANGATE_SQUID "squid"
 #define SCANGATE_ELZUOSE "elzuose"
 #define SCANGATE_KEPORI "kepori"
-
+#define SCANGATE_HUMANANTHRO "Anthropomorph"
 /obj/machinery/scanner_gate
 	name = "scanner gate"
 	desc = "A gate able to perform mid-depth scans on any organisms who pass under it."
@@ -151,6 +151,8 @@
 						scan_species = /datum/species/elzuose
 					if(SCANGATE_KEPORI)
 						scan_species = /datum/species/kepori
+					if(SCANGATE_HUMANANTHRO)
+						scan_species = /datum/species/human/anthro
 				if(is_species(H, scan_species))
 					beep = TRUE
 				if(detect_species == SCANGATE_ZOMBIE) //Can detect dormant zombies

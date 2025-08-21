@@ -94,6 +94,7 @@
 #define SPECIES_ELZUOSE "elzuose"
 #define SPECIES_FLYPERSON "fly"
 #define SPECIES_HUMAN "human"
+#define SPECIES_HUMANANTHRO "anthropomorph"
 #define SPECIES_IPC "ipc"
 #define SPECIES_JELLYPERSON "jelly"
 #define SPECIES_SLIMEPERSON "slime_person"
@@ -242,7 +243,7 @@
 #define SANITY_INSANE 0
 
 //Nutrition levels for humans
-#define NUTRITION_LEVEL_FULL 550
+#define NUTRITION_LEVEL_FULL 750
 #define NUTRITION_LEVEL_WELL_FED 450
 #define NUTRITION_LEVEL_FED 350
 #define NUTRITION_LEVEL_HUNGRY 250
@@ -258,7 +259,7 @@
 #define DISGUST_LEVEL_GROSS 25
 
 //Used as an upper limit for species that continuously gain nutriment
-#define NUTRITION_LEVEL_ALMOST_FULL 535
+#define NUTRITION_LEVEL_ALMOST_FULL 700
 
 //Charge levels for Ethereals
 //WS Begin -- Ethereal Charge Scaling
@@ -365,15 +366,15 @@
 #define DOOR_CRUSH_DAMAGE 15 //the amount of damage that airlocks deal when they crush you
 
 #define HUNGER_FACTOR 0.1 //factor at which mob nutrition decreases
-#define ELZUOSE_CHARGE_FACTOR (0.05 * ELZUOSE_CHARGE_SCALING_MULTIPLIER) //factor at which ethereal's charge decreases
+#define ELZUOSE_CHARGE_FACTOR (0.025 * ELZUOSE_CHARGE_SCALING_MULTIPLIER) //factor at which ethereal's charge decreases
 #define REAGENTS_METABOLISM 0.4 //How many units of reagent are consumed per tick, by default.
 #define REAGENTS_EFFECT_MULTIPLIER (REAGENTS_METABOLISM / 0.4) // By defining the effect multiplier this way, it'll exactly adjust all effects according to how they originally were with the 0.4 metabolism
 ///Greater numbers mean that less alcohol has greater intoxication potential
-#define ALCOHOL_THRESHOLD_MODIFIER 1
+#define ALCOHOL_THRESHOLD_MODIFIER 2
 ///The rate at which alcohol affects you
 #define ALCOHOL_RATE 0.005
 ///The exponent applied to boozepwr to make higher volume alcohol at least a little bit damaging to the liver
-#define ALCOHOL_EXPONENT 1.6
+#define ALCOHOL_EXPONENT 1
 #define ETHANOL_METABOLISM 0.5 * REAGENTS_METABOLISM
 
 // Eye protection

@@ -60,3 +60,49 @@
 	if(H)
 		stop_wagging_tail(H)
 	. = ..()
+
+/datum/species/human/anthro
+	name = "\improper Anthropomorph"
+	id = SPECIES_HUMANANTHRO
+	default_color = "FFFFFF"
+	species_traits = list(EYECOLOR,HAIR,MUTCOLORS, LIPS, SCLERA, EMOTE_OVERLAY, MUTCOLORS_SECONDARY, HAS_FLESH, HAS_BONE)
+	mutant_bodyparts = list("ears", "tail_human", "face_markings", "frills", "horns", "spines", "body_markings", "legs")
+	default_features = list("mcolor" = "0F0", "face_markings" = "None", "horns" = "None", "frills" = "None", "body_markings" = "None", "legs" = "Normal Legs", "body_size" = "Normal", "tail_human" = "None", "ears" = "None", "wings" = "None")
+	use_skintones = FALSE
+	digitigrade_customization = DIGITIGRADE_OPTIONAL
+	skinned_type = /obj/item/stack/sheet/animalhide/human
+	disliked_food = GROSS | RAW | CLOTH
+	liked_food = JUNKFOOD | FRIED | SUGAR
+	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP
+	loreblurb = "Various species out in the frontier, from varying places of origin."
+	species_language_holder = /datum/language_holder/human
+
+/datum/species/human/anthro/on_species_gain(mob/living/carbon/C, datum/species/old_species, pref_load)
+	switch(C.dna.features["ears"])
+		if("Elf")
+			mutantears = /obj/item/organ/ears/elf
+		if("Cat")
+			mutantears = /obj/item/organ/ears/cat
+		if("Dog")
+			mutantears = /obj/item/organ/ears/dog
+		if("Fox")
+			mutantears = /obj/item/organ/ears/fox
+		if("Rabbit")
+			mutantears = /obj/item/organ/ears/rabbit
+		if("Bent Rabbit")
+			mutantears = /obj/item/organ/ears/rabbit/bent
+		if("Floppy Rabbit")
+			mutantears = /obj/item/organ/ears/rabbit/floppy
+	switch(C.dna.features["tail_human"])
+		if("Cat")
+			mutant_organs |= /obj/item/organ/tail/cat
+		if("Dog")
+			mutant_organs |= /obj/item/organ/tail/dog
+		if("Fox")
+			mutant_organs |= /obj/item/organ/tail/fox
+		if("Fox 2")
+			mutant_organs |= /obj/item/organ/tail/fox/alt
+		if("Rabbit")
+			mutant_organs |= /obj/item/organ/tail/rabbit
+
+	return ..()

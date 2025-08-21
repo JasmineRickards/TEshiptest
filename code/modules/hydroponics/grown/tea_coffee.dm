@@ -73,7 +73,7 @@
 	filling_color = "#DC143C"
 	bite_consumption_mod = 2
 	dry_grind = TRUE
-	grind_results = list(/datum/reagent/toxin/coffeepowder = 0)
+	grind_results = list(/datum/reagent/toxin/coffeepowder = 0.1)
 	distill_reagent = /datum/reagent/consumable/ethanol/kahlua
 
 // Coffee Robusta
@@ -94,4 +94,4 @@
 	name = "coffee robusta beans"
 	desc = "Increases robustness by 37 percent!"
 	icon_state = "coffee_robusta"
-	grind_results = list(/datum/reagent/toxin/coffeepowder = 0, /datum/reagent/medicine/morphine = 0)
+	grind_results = list(/datum/reagent/toxin/coffeepowder = 0.1, /datum/reagent/medicine/morphine = 0.1)
